@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Examen_2.AreaRectangulo"
+             Title="AreaRectangulo">
+    <VerticalStackLayout>
+        <Label 
+            Text="Welcome to .NET MAUI!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Entry x:Name="Numero1"
+               Placeholder="base"
+               Keyboard="Numeric"
+               />
+
+        <Entry x:Name="Numero2"
+        Placeholder="Altura"
+        Keyboard="Numeric"
+        />
+        
+         <Button Text="SUMAR"
+        VerticalOptions="Center"
+        HorizontalOptions="Center"
+        Clicked="OnButtonClicked" />
+
+        <Button Text="Limpiar" Command="{Binding LimpiarCommand}"/>
+
+    </VerticalStackLayout>
+</ContentPage>
