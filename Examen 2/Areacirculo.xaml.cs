@@ -26,6 +26,7 @@ public partial class Areacirculo : ContentPage
 			{
 				var AREA = Area * 2;
 				var RESULTADO = PI * AREA;
+                               var Solucion = RESULTADO.ToString();
 			}
 		}
 		catch (Exception ex)
